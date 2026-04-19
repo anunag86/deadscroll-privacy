@@ -323,17 +323,22 @@ main {
 }
 
 .thesis-panel .stat-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
+    grid-template-columns: 1fr;
+    gap: 0;
 }
 
 .thesis-panel .stat-card {
-    padding: 12px 0 0;
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    padding: 16px 0;
     border-top: 1px solid var(--soft-grey);
 }
 
 .thesis-panel .stat-label {
     color: var(--brutal-grey);
+    margin-top: 2px;
 }
 
 .thesis-panel .hero-art {
@@ -354,8 +359,9 @@ main {
 }
 
 .thesis-panel .stat-value {
-    font-size: 1.16rem;
-    line-height: 1.08;
+    margin-top: 0;
+    font-size: 1.24rem;
+    line-height: 1.04;
     letter-spacing: -0.02em;
 }
 
@@ -693,6 +699,11 @@ main {
     }
 
     .thesis-panel .stat-grid {
-        gap: 16px;
+        gap: 0;
+    }
+
+    .thesis-panel .stat-card {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
 }
