@@ -3,139 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeadScroll - Privacy Policy</title>
+    <meta name="description" content="Privacy policy for DeadScroll, the Android intervention app designed to interrupt compulsive scrolling.">
+    <title>DEADSCROLL | Privacy Policy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,900;1,6..96,900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
-        /* DEADSCROLL BRAND CSS */
         :root {
-            --matte-black: #0D0D0D;
-            --desaturated-gray: #4A4A4A;
-            --off-white: #F5F5F3;
+            --absolute-black: #0D0D0D;
+            --bone-white: #F5F4F0;
+            --secure-teal: #218C74;
+            --brutal-grey: #4A4A4A;
+            --soft-grey: #E0E0E0;
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
-            background-color: var(--off-white);
-            color: var(--matte-black);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
+            background: var(--bone-white);
+            color: var(--absolute-black);
+            font-family: "Montserrat", sans-serif;
+            line-height: 1.65;
         }
 
-        .container {
-            max-width: 800px;
+        a {
+            color: inherit;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+        }
+
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .top-rule {
+            height: 6px;
+            background: var(--absolute-black);
             width: 100%;
-            padding: 40px 20px;
         }
 
-        /* Editorial Header */
-        header {
+        .site-header {
+            padding: 28px 0 32px;
+            border-bottom: 1px solid var(--absolute-black);
+        }
+
+        .brand-lockup {
             display: flex;
             align-items: center;
-            padding-bottom: 20px;
-            margin-bottom: 60px; /* The Deliberate Pause */
-            border-bottom: 1px solid var(--desaturated-gray);
+            gap: 20px;
         }
 
-        .brand-logo {
-            height: 70px; /* Adjust based on your preference */
-            mix-blend-mode: multiply; /* Helps transparent PNGs sit well on the background */
+        .brand-mark-frame {
+            width: 84px;
+            height: 84px;
+            border: 1px solid var(--absolute-black);
+            background: #FFFFFF;
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+        }
+
+        .brand-mark {
+            width: 72px;
+            height: 72px;
+            display: block;
+        }
+
+        .brand-kicker,
+        .brand-subtitle,
+        .eyebrow,
+        .snapshot-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        .brand-kicker {
+            color: var(--brutal-grey);
+            margin-bottom: 8px;
         }
 
         .brand-name {
-            height: 120px; /* Adjust based on your preference */
+            margin: 0;
+            font-size: clamp(2.2rem, 7vw, 4.75rem);
+            font-weight: 900;
+            line-height: 0.92;
+            letter-spacing: -0.07em;
+            text-transform: uppercase;
         }
 
-        /* Typography */
+        .brand-subtitle {
+            color: var(--brutal-grey);
+            margin-top: 10px;
+        }
+
+        .hero {
+            padding: 44px 0 22px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.8fr);
+            gap: 28px;
+            align-items: start;
+        }
+
+        .eyebrow {
+            color: var(--secure-teal);
+            margin-bottom: 16px;
+        }
+
         h1 {
-            font-family: 'Bodoni Moda', serif;
+            margin: 0 0 18px;
+            font-size: clamp(2.5rem, 7vw, 4.6rem);
             font-weight: 900;
-            font-size: 3rem;
+            line-height: 0.94;
+            letter-spacing: -0.06em;
+            text-transform: uppercase;
+            max-width: 11ch;
+        }
+
+        .hero-copy {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+            max-width: 40rem;
+        }
+
+        .snapshot {
+            border: 1px solid var(--absolute-black);
+            background: #FFFFFF;
+            padding: 18px;
+        }
+
+        .snapshot-label {
+            color: var(--brutal-grey);
             margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
         }
 
-        .effective-date {
-            font-family: 'Inter', sans-serif;
-            font-weight: 300;
-            color: var(--desaturated-gray);
+        .snapshot-title {
+            margin: 0 0 10px;
             font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: 60px; /* The Deliberate Pause */
-        }
-
-        h2 {
-            font-family: 'Bodoni Moda', serif;
             font-weight: 900;
-            font-size: 1.75rem;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid var(--matte-black);
-            display: inline-block;
-            padding-bottom: 5px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
         }
 
-        p {
-            font-size: 1.125rem;
-            font-weight: 400;
-            margin-bottom: 24px;
+        .snapshot p {
+            margin: 0;
+            font-size: 0.98rem;
+            font-weight: 500;
         }
 
-        strong {
+        main {
+            padding-top: 10px;
+        }
+
+        .policy-section {
+            padding-top: 28px;
+            margin-top: 28px;
+            border-top: 1px solid var(--soft-grey);
+        }
+
+        .policy-section h2 {
+            margin: 0 0 14px;
+            font-size: 1.1rem;
+            font-weight: 900;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .policy-section p {
+            margin: 0 0 18px;
+            font-size: 1.05rem;
+        }
+
+        .policy-section strong {
             font-weight: 700;
         }
 
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            h1 { font-size: 2.25rem; }
-            .brand-logo { height: 45px; }
-            .brand-name { height: 30px; }
+        .footer-note {
+            margin-top: 42px;
+            padding-top: 22px;
+            border-top: 2px solid var(--absolute-black);
+            color: var(--brutal-grey);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 760px) {
+            .page {
+                padding: 0 18px 60px;
+            }
+
+            .brand-lockup {
+                align-items: flex-start;
+            }
+
+            .brand-mark-frame {
+                width: 72px;
+                height: 72px;
+            }
+
+            .brand-mark {
+                width: 62px;
+                height: 62px;
+            }
+
+            .hero {
+                padding-top: 36px;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <header>
-            <img src="ic_corrupted_chronometer.png" alt="DeadScroll Logo" class="brand-logo">
-            <img src="App Name header-Photoroom.png" alt="DeadScroll" class="brand-name">
+    <div class="top-rule"></div>
+    <div class="page">
+        <header class="site-header">
+            <div class="brand-lockup">
+                <div class="brand-mark-frame">
+                    <img src="deadscroll-mark.png" alt="DeadScroll mark" class="brand-mark">
+                </div>
+                <div>
+                    <div class="brand-kicker">Android Intervention System</div>
+                    <p class="brand-name">DEADSCROLL</p>
+                    <div class="brand-subtitle">Privacy and Data Handling</div>
+                </div>
+            </div>
         </header>
 
+        <section class="hero">
+            <div class="hero-grid">
+                <div>
+                    <div class="eyebrow">Public Policy</div>
+                    <h1>Privacy Policy</h1>
+                    <p class="hero-copy">DeadScroll is built to interrupt compulsive app loops, not to turn your attention into an advertising product. This page explains what the app needs access to, what stays on your device, and where limited third-party processing may exist in the version of the app you install.</p>
+                </div>
+                <aside class="snapshot">
+                    <div class="snapshot-label">Current Policy Snapshot</div>
+                    <p class="snapshot-title">Effective Date: April 19, 2026</p>
+                    <p>Core app settings and intervention history are intended to remain local to your device. DeadScroll does not require an account for core functionality.</p>
+                </aside>
+            </div>
+        </section>
+
         <main>
-            <h1>Privacy Policy</h1>
-            <div class="effective-date">Effective Date: March 19, 2026</div>
+            <section class="policy-section">
+                <h2>1. Introduction</h2>
+                <p><strong>DeadScroll</strong> ("we," "our," or "the App") is a digital wellness tool designed to interrupt compulsive scrolling and app-switching loops. We aim to keep core app functionality, settings, and intervention history on your device. This Privacy Policy explains what data the App handles, what stays local, and when limited technical information may be processed by third-party services used in the version of the App you install.</p>
+            </section>
 
-            <h2>1. Introduction</h2>
-            <p><strong>DeadScroll</strong> ("we," "our," or "the App") is a digital wellness tool designed to introduce cognitive friction and prevent doomscrolling. We believe that your attention belongs to you, and so does your data. This Privacy Policy explains how the App operates and explicitly outlines our zero-data-collection architecture.</p>
+            <section class="policy-section">
+                <h2>2. Accessibility Service API</h2>
+                <p>DeadScroll requires Android's AccessibilityService API to perform its core intervention behavior.</p>
+                <p><strong>Why it is needed:</strong> The service is used to detect when you open user-selected target apps and certain interface events, such as scrolling, so DeadScroll can decide when to show an intervention overlay.</p>
+                <p><strong>What it does not do:</strong> We do not use AccessibilityService to read the content of your private messages, collect passwords, or transmit the contents of your screen to DeadScroll-controlled servers. The service is used to support intervention behavior inside the apps you choose to target.</p>
+            </section>
 
-            <h2>2. Accessibility Service API (Crucial Disclosure)</h2>
-            <p>DeadScroll requires the use of the Android AccessibilityService API to function.</p>
-            <p><strong>Why it is needed:</strong> The API is used strictly to detect when you launch a user-designated "target app" (e.g., social media) so that DeadScroll can draw its intervention overlay (the "Tollbooth") on top of the screen.</p>
-            <p><strong>What it does NOT do:</strong> We do not use the AccessibilityService API to collect, store, or transmit any personal data, passwords, keystrokes, or screen content. The App only reads package names to determine if a targeted app has been opened.</p>
+            <section class="policy-section">
+                <h2>3. Data Collection and Storage</h2>
+                <p>DeadScroll does not require you to create an account, and it does not provide DeadScroll-hosted cloud sync for your settings or intervention history.</p>
+                <p><strong>Local data:</strong> Core app data, such as your selected target apps, settings, and intervention history, is stored locally on your device using standard Android storage mechanisms.</p>
+                <p><strong>Third-party services:</strong> Some builds of DeadScroll may include Google Firebase or similar third-party services for analytics, diagnostics, or configuration. If those services are enabled in the version you use, they may receive limited technical or app-interaction information in accordance with their own privacy policies.</p>
+                <p><strong>No advertising sale of data:</strong> We do not sell your personal data, and we do not use your data for third-party advertising.</p>
+            </section>
 
-            <h2>3. Data Collection and Storage</h2>
-            <p>DeadScroll operates entirely offline.</p>
-            <p><strong>Zero Cloud Storage:</strong> The App does not connect to any external servers, databases, or analytics engines.</p>
-            <p><strong>Local Data Only:</strong> Any data generated by the App (such as the list of apps you want to block, your chosen severity level, and your analytics regarding time saved) is stored locally on your device's internal storage using standard Android databases.</p>
-            <p><strong>No Tracking:</strong> We do not use third-party trackers, crashlytics, or advertising IDs.</p>
+            <section class="policy-section">
+                <h2>4. Data Sharing</h2>
+                <p>We do not sell or rent your personal data. Apart from limited disclosures to third-party service providers described in this policy, your app settings and intervention history are intended to remain on your device and are not shared by DeadScroll with third parties.</p>
+            </section>
 
-            <h2>4. Data Sharing</h2>
-            <p>Because we do not collect your data, we cannot share, sell, or distribute it to any third parties. Your usage history never leaves your phone.</p>
+            <section class="policy-section">
+                <h2>5. User Consent and Control</h2>
+                <p>You control whether DeadScroll has access to Accessibility, Overlay, and related Android permissions. If you revoke those permissions in system settings, the App's core protection features may stop working until they are restored.</p>
+                <p>Deleting the App removes locally stored DeadScroll data from your device. If limited information has already been processed by a third-party provider used in your build, that provider may retain it according to its own policies.</p>
+            </section>
 
-            <h2>5. User Consent and Control</h2>
-            <p>You have full control over the App. You can revoke the Accessibility permission at any time via your device's System Settings, which will immediately pause the App's core functionality. You can also delete the App, which will permanently erase all local analytics and settings.</p>
-
-            <h2>6. Contact Us</h2>
-            <p>If you have any questions regarding this Privacy Policy or the technical architecture of DeadScroll, please contact product@deadscroll.app.</p>
+            <section class="policy-section">
+                <h2>6. Contact Us</h2>
+                <p>If you have questions about this Privacy Policy, the permissions DeadScroll uses, or the App's technical architecture, contact <a href="mailto:product@deadscroll.app">product@deadscroll.app</a>.</p>
+            </section>
         </main>
-    </div>
 
+        <p class="footer-note">DeadScroll's website and app copy will continue to evolve as the product and its instrumentation mature. When the app's data practices change, this policy should be updated to match the shipped build.</p>
+    </div>
 </body>
 </html>
