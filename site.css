@@ -255,8 +255,8 @@ main {
     border-width: 2px;
     background: var(--paper-white);
     color: var(--absolute-black);
-    padding: 20px;
-    gap: 14px;
+    padding: 24px;
+    gap: 18px;
 }
 
 .thesis-panel .panel-label {
@@ -329,10 +329,10 @@ main {
 
 .thesis-panel .stat-card {
     display: grid;
-    grid-template-columns: 150px minmax(0, 1fr);
-    gap: 18px;
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 40px;
     align-items: start;
-    padding: 16px 0;
+    padding: 18px 0;
     border-top: 1px solid var(--soft-grey);
 }
 
@@ -342,11 +342,11 @@ main {
 }
 
 .thesis-panel .hero-art {
-    padding: 0;
+    padding: 10px 0 12px;
 }
 
 .thesis-panel .hero-hourglass {
-    width: min(100%, 200px);
+    width: min(100%, 238px);
 }
 
 .stat-value {
@@ -360,8 +360,8 @@ main {
 
 .thesis-panel .stat-value {
     margin-top: 0;
-    font-size: 1.24rem;
-    line-height: 1.04;
+    font-size: 1.34rem;
+    line-height: 1;
     letter-spacing: -0.02em;
 }
 
@@ -704,6 +704,6 @@ main {
 
     .thesis-panel .stat-card {
         grid-template-columns: 1fr;
-        gap: 8px;
+        gap: 10px;
     }
 }
