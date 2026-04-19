@@ -138,8 +138,12 @@ main {
 }
 
 .home-hero-grid {
-    grid-template-columns: minmax(0, 0.92fr) minmax(560px, 1.08fr);
+    grid-template-columns: 1fr;
     align-items: start;
+}
+
+.home-hero-copy {
+    max-width: 940px;
 }
 
 .hero-copy-stack {
@@ -171,6 +175,14 @@ main {
     font-size: clamp(2rem, 4.4vw, 3.2rem);
     line-height: 0.94;
     letter-spacing: -0.04em;
+}
+
+.hero-title-wide {
+    max-width: 15.5ch;
+}
+
+.page-title-wide {
+    max-width: 15.5ch;
 }
 
 .hero-text,
@@ -504,6 +516,31 @@ main {
 .section-stack {
     display: grid;
     gap: 18px;
+}
+
+.policy-stack {
+    max-width: 820px;
+}
+
+.policy-meta {
+    display: grid;
+    gap: 4px;
+    padding-top: 2px;
+}
+
+.policy-meta-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mid-grey);
+}
+
+.policy-meta-date {
+    font-size: 0.98rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .policy-section {
