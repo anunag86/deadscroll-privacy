@@ -138,7 +138,8 @@ main {
 }
 
 .home-hero-grid {
-    grid-template-columns: minmax(0, 1.06fr) minmax(420px, 0.94fr);
+    grid-template-columns: minmax(0, 0.92fr) minmax(560px, 1.08fr);
+    align-items: start;
 }
 
 .hero-copy-stack {
@@ -255,8 +256,10 @@ main {
     border-width: 2px;
     background: var(--paper-white);
     color: var(--absolute-black);
-    padding: 24px;
-    gap: 18px;
+    min-height: auto;
+    padding: 26px;
+    gap: 20px;
+    align-self: start;
 }
 
 .thesis-panel .panel-label {
@@ -329,10 +332,10 @@ main {
 
 .thesis-panel .stat-card {
     display: grid;
-    grid-template-columns: 170px minmax(0, 1fr);
-    gap: 40px;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 52px;
     align-items: start;
-    padding: 18px 0;
+    padding: 20px 0;
     border-top: 1px solid var(--soft-grey);
 }
 
@@ -342,11 +345,11 @@ main {
 }
 
 .thesis-panel .hero-art {
-    padding: 10px 0 12px;
+    padding: 18px 0 22px;
 }
 
 .thesis-panel .hero-hourglass {
-    width: min(100%, 238px);
+    width: min(100%, 278px);
 }
 
 .stat-value {
@@ -360,8 +363,8 @@ main {
 
 .thesis-panel .stat-value {
     margin-top: 0;
-    font-size: 1.34rem;
-    line-height: 1;
+    font-size: 1.56rem;
+    line-height: 0.97;
     letter-spacing: -0.02em;
 }
 
