@@ -65,8 +65,6 @@
             flex-shrink: 0;
         }
 
-        .brand-kicker,
-        .brand-subtitle,
         .eyebrow,
         .snapshot-label {
             font-size: 0.68rem;
@@ -75,23 +73,13 @@
             text-transform: uppercase;
         }
 
-        .brand-kicker {
-            color: var(--brutal-grey);
-            margin-bottom: 8px;
-        }
-
         .brand-name {
             margin: 0;
-            font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+            font-size: clamp(1rem, 2vw, 1.15rem);
             font-weight: 900;
             line-height: 1;
             letter-spacing: 0.04em;
             text-transform: uppercase;
-        }
-
-        .brand-subtitle {
-            color: var(--brutal-grey);
-            margin-top: 6px;
         }
 
         .hero {
@@ -193,7 +181,7 @@
             }
 
             .brand-lockup {
-                align-items: flex-start;
+                align-items: center;
             }
 
             .brand-mark {
@@ -217,11 +205,7 @@
         <header class="site-header">
             <div class="brand-lockup">
                 <img src="deadscroll-mark.png" alt="DeadScroll mark" class="brand-mark">
-                <div>
-                    <div class="brand-kicker">Android Intervention System</div>
-                    <p class="brand-name">DEADSCROLL</p>
-                    <div class="brand-subtitle">Privacy and Data Handling</div>
-                </div>
+                <p class="brand-name">DEADSCROLL</p>
             </div>
         </header>
 
