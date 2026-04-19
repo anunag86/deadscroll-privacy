@@ -405,6 +405,10 @@ main {
     max-width: 18ch;
 }
 
+.section-title-wide {
+    max-width: 24ch;
+}
+
 .section-text {
     max-width: 44rem;
     font-size: 1rem;
