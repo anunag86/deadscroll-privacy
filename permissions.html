@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Why DeadScroll uses Accessibility, Overlay, and Usage Access permissions on Android.">
+    <meta name="description" content="Why DEADSCROLL uses Accessibility, Overlay, and Usage Access permissions on Android.">
     <title>DEADSCROLL | Permissions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
         <header class="site-header">
             <div class="header-bar">
                 <a href="/" class="brand-link">
-                    <img src="deadscroll-mark.png" alt="DeadScroll mark" class="brand-mark">
+                    <img src="deadscroll-mark.png" alt="DEADSCROLL mark" class="brand-mark">
                     <p class="brand-name">DEADSCROLL</p>
                 </a>
                 <nav class="site-nav" aria-label="Primary">
@@ -33,56 +33,56 @@
             <section class="hero">
                 <div class="hero-copy-stack">
                     <div class="eyebrow">Permission Rationale</div>
-                    <h1 class="page-title page-title-wide">Why DeadScroll needs<br>sensitive Android access.</h1>
-                    <p class="lede">DeadScroll intervenes in real time. That means some Android permissions are not optional if the product is going to work honestly. This page explains what each permission is for, what it enables, and what DeadScroll does not use it to do.</p>
+                    <h1 class="page-title page-title-wide">Why DEADSCROLL needs<br>Android permissions.</h1>
+                    <p class="lede">DEADSCROLL works in real time. That means some Android permissions are essential if the product is going to intervene honestly and visibly. This page explains what each permission is for, what it enables, and what DEADSCROLL does not use it to do.</p>
                 </div>
             </section>
 
             <section class="section">
                 <div class="section-header">
                     <div class="eyebrow">Core Permissions</div>
-                    <h2 class="section-title">These permissions exist because the nudge has to appear at the right moment.</h2>
+                    <h2 class="section-title">These permissions exist because the nudge has to appear at the right place and time.</h2>
                 </div>
                 <div class="card-grid three-up">
                     <article class="card">
                         <div class="card-label">Accessibility</div>
-                        <h3>Detect target-app entry and loop signals</h3>
-                        <p>Accessibility helps DeadScroll detect when selected target apps open and when relevant interface signals, such as scrolling, show that a loop may be forming.</p>
+                        <h3>Detect target-app entry and attention signals</h3>
+                        <p>Accessibility helps DEADSCROLL detect when selected target apps open and when relevant interface signals, such as scrolling, show that attention may be drifting.</p>
                     </article>
                     <article class="card dark">
                         <div class="card-label">Overlay</div>
                         <h3>Place the intervention over the app</h3>
-                        <p>Overlay permission lets DeadScroll display the nudge above the target app in real time. Without it, the intervention cannot appear where the drift is happening.</p>
+                        <p>Overlay permission lets DEADSCROLL display the nudge above the target app in real time. Without it, the intervention cannot appear where the drift is happening.</p>
                     </article>
                     <article class="card">
                         <div class="card-label">Usage Access</div>
                         <h3>Support onboarding and usage-aware surfaces</h3>
-                        <p>Usage Access helps DeadScroll show where attention is getting lost and supports certain usage-based parts of the experience.</p>
+                        <p>Usage Access helps DEADSCROLL show where attention is getting lost and supports certain usage-based parts of the experience.</p>
                     </article>
                 </div>
             </section>
 
             <section class="section">
                 <div class="section-header">
-                    <div class="eyebrow">What DeadScroll Does Not Do</div>
+                    <div class="eyebrow">What DEADSCROLL Does Not Do</div>
                     <h2 class="section-title">The power of the permission does not define the intent of the product.</h2>
                 </div>
                 <div class="card-grid two-up">
                     <article class="card">
                         <div class="card-label">Accessibility Limits</div>
-                        <h3>DeadScroll is not trying to inspect your private content.</h3>
+                        <h3>DEADSCROLL is not trying to inspect your private content.</h3>
                         <ul class="bullet-list">
                             <li>It is not built to read your private messages for meaning.</li>
                             <li>It is not built to collect passwords or typed secrets.</li>
-                            <li>It is not built to transmit the contents of your screen to DeadScroll-controlled servers.</li>
+                            <li>It is not built to transmit the contents of your screen to DEADSCROLL-controlled servers.</li>
                         </ul>
                     </article>
                     <article class="card">
                         <div class="card-label">Usage And Storage Limits</div>
                         <h3>Core app state is intended to remain local.</h3>
                         <ul class="bullet-list">
-                            <li>DeadScroll does not require an account for core functionality.</li>
                             <li>Settings and intervention history are intended to remain on-device.</li>
+                            <li>These permissions are used to time interventions, not to build an identity profile.</li>
                             <li>Any third-party technical processing should be disclosed separately in the privacy policy.</li>
                         </ul>
                     </article>
@@ -98,12 +98,12 @@
                     <article class="card">
                         <div class="card-label">System Control</div>
                         <h3>Accessibility and Overlay can be turned off from Android settings.</h3>
-                        <p>If those permissions are revoked, DeadScroll's core intervention features may stop working until they are restored. That is the expected behavior.</p>
+                        <p>If those permissions are revoked, DEADSCROLL's core intervention features may stop working until they are restored. That is the expected behavior.</p>
                     </article>
                     <article class="card">
-                        <div class="card-label">Removal</div>
-                        <h3>Deleting the app removes local DeadScroll data from the device.</h3>
-                        <p>If a third-party technical service has already processed limited event or diagnostics data in your build, retention may be governed by that provider's own policy.</p>
+                        <div class="card-label">User Scope</div>
+                        <h3>You choose which apps DEADSCROLL is allowed to watch.</h3>
+                        <p>Target apps can be added or removed inside the product. DEADSCROLL is meant to support a productive life, not force the same rule onto every app on your phone.</p>
                     </article>
                 </div>
             </section>
@@ -113,8 +113,7 @@
         <footer class="site-footer">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-label">DeadScroll Public Surface</div>
-                    <p class="footer-note">Permissions matter because the product intervenes inside real app sessions. The explanations should be as direct as the product itself.</p>
+                    <p class="footer-brand">DEADSCROLL</p>
                 </div>
                 <div class="footer-meta">
                     <div class="footer-nav">
