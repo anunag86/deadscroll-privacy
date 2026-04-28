@@ -698,6 +698,22 @@ main {
     font-weight: 700;
 }
 
+.research-list {
+    display: grid;
+    gap: 14px;
+    padding-left: 18px;
+}
+
+.research-list li::marker {
+    color: var(--secure-teal);
+}
+
+.research-list a {
+    font-weight: 700;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
 .muted {
     color: var(--brutal-grey);
 }
