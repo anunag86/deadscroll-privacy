@@ -150,11 +150,12 @@ ol {
     display: inline-block;
     width: 0.42rem;
     height: 0.42rem;
-    margin-right: 0.42rem;
+    margin-left: 0.42rem;
     border-right: 1.6px solid currentColor;
     border-bottom: 1.6px solid currentColor;
     transform: rotate(45deg) translateY(-1px);
     transition: transform 160ms ease;
+    order: 2;
 }
 
 .nav-group.active > .nav-link,
@@ -916,7 +917,7 @@ main {
     .nav-group .nav-link::before {
         width: 0.34rem;
         height: 0.34rem;
-        margin-right: 0.34rem;
+        margin-left: 0.34rem;
     }
 
     .nav-submenu {
