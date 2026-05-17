@@ -63,7 +63,7 @@ ol {
     justify-content: space-between;
     align-items: center;
     gap: 20px 32px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .brand-link {
@@ -93,13 +93,7 @@ ol {
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 10px 18px;
-}
-
-.header-cta {
-    min-height: 40px;
-    padding: 0 16px;
-    font-size: 0.74rem;
-    letter-spacing: 0.12em;
+    margin-left: auto;
 }
 
 .nav-link {
@@ -239,11 +233,6 @@ main {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
-}
-
-.micro-note {
-    font-size: 0.9rem;
-    color: var(--brutal-grey);
 }
 
 .panel,
@@ -710,14 +699,14 @@ main {
     font-weight: 700;
 }
 
-.play-badge-link {
+.header-play-badge-link {
     display: inline-flex;
-    width: fit-content;
-    margin-top: 2px;
+    flex-shrink: 0;
+    margin-left: 6px;
 }
 
-.play-badge {
-    width: 220px;
+.header-play-badge {
+    width: 156px;
     height: auto;
 }
 
@@ -750,6 +739,10 @@ main {
 }
 
 @media (max-width: 960px) {
+    .header-bar {
+        flex-wrap: wrap;
+    }
+
     .hero-grid,
     .page-layout {
         grid-template-columns: 1fr;
@@ -785,10 +778,11 @@ main {
     .site-nav {
         width: 100%;
         justify-content: flex-start;
+        margin-left: 0;
     }
 
-    .header-cta {
-        min-height: 38px;
+    .header-play-badge {
+        width: 148px;
     }
 
     .hero-title,
