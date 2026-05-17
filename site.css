@@ -773,19 +773,62 @@ main {
         padding: 0 18px 56px;
     }
 
+    .site-header {
+        padding: 16px 0 18px;
+    }
+
     .header-bar {
         align-items: flex-start;
+        gap: 12px 14px;
+    }
+
+    .brand-link {
+        flex: 1 1 auto;
+        min-width: 0;
+        gap: 8px;
+    }
+
+    .brand-mark {
+        width: 34px;
+        height: 34px;
+    }
+
+    .brand-name {
+        font-size: 1.15rem;
+        line-height: 0.98;
+        letter-spacing: -0.02em;
+    }
+
+    .header-play-badge-link {
+        margin-left: 0;
+        order: 2;
     }
 
     .site-nav {
         width: 100%;
-        flex-wrap: wrap;
+        order: 3;
+        flex-wrap: nowrap;
         justify-content: flex-start;
         margin-left: 0;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 8px 12px;
+        padding-bottom: 4px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .site-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-link {
+        padding: 6px 0;
+        font-size: 0.7rem;
     }
 
     .header-play-badge {
-        width: 148px;
+        width: 132px;
     }
 
     .hero-title,
@@ -812,5 +855,43 @@ main {
     .thesis-panel .stat-card {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+    .site-footer {
+        margin-top: 22px;
+        padding-top: 18px;
+    }
+
+    .footer-grid {
+        gap: 12px;
+    }
+
+    .footer-meta {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .footer-nav {
+        flex-wrap: nowrap;
+        gap: 8px 14px;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 2px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .footer-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .footer-nav a {
+        white-space: nowrap;
+        font-size: 0.72rem;
+    }
+
+    .footer-brand {
+        font-size: 0.92rem;
     }
 }
