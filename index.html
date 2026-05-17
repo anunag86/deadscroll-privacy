@@ -27,6 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="site.css">
+    <script src="site.js" defer></script>
 </head>
 <body>
     <div class="top-rule"></div>
@@ -39,10 +40,15 @@
                 </a>
                 <nav class="site-nav" aria-label="Primary">
                     <a href="/" class="nav-link active" aria-current="page">Home</a>
-                    <a href="/why-we-nudge" class="nav-link">Why We Nudge</a>
-                    <a href="/how-it-works" class="nav-link">How It Works</a>
-                    <a href="/permissions" class="nav-link">Permissions</a>
-                    <a href="/privacy" class="nav-link">Privacy</a>
+                    <details class="nav-group">
+                        <summary class="nav-link">How It Works</summary>
+                        <div class="nav-submenu" role="menu" aria-label="How It Works Pages">
+                            <a href="/why-we-nudge" role="menuitem">Why We Nudge</a>
+                            <a href="/how-it-works" role="menuitem">How DEADSCROLL Intervenes</a>
+                            <a href="/permissions" role="menuitem">Why It Needs Access</a>
+                            <a href="/privacy" role="menuitem">Read Privacy</a>
+                        </div>
+                    </details>
                     <a href="/support" class="nav-link">Support</a>
                 </nav>
                 <a href="https://play.google.com/store/apps/details?id=com.reclaim.deepwork" class="header-play-badge-link" target="_blank" rel="noopener noreferrer">
@@ -58,12 +64,6 @@
                         <div class="eyebrow">Adaptive Attention Control</div>
                         <h1 class="hero-title hero-title-wide">Interrupt compulsive scrolling<br>before it hardens into lost time.</h1>
                         <p class="hero-text">DEADSCROLL is not a generic blocker. It is a digital wellbeing tool that notices when attention starts to drift, introduces deliberate friction, and escalates only when the same pattern keeps returning.</p>
-                        <div class="teal-rule"></div>
-                        <div class="button-row">
-                            <a href="/how-it-works" class="button">How It Works</a>
-                            <a href="/permissions" class="button secondary">Why It Needs Access</a>
-                            <a href="/privacy" class="button secondary">Read Privacy</a>
-                        </div>
                     </div>
                 </div>
             </section>
