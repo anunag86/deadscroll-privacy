@@ -95,6 +95,13 @@ ol {
     gap: 10px 18px;
 }
 
+.header-cta {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 0.74rem;
+    letter-spacing: 0.12em;
+}
+
 .nav-link {
     position: relative;
     padding: 10px 0;
@@ -232,6 +239,11 @@ main {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
+}
+
+.micro-note {
+    font-size: 0.9rem;
+    color: var(--brutal-grey);
 }
 
 .panel,
@@ -698,6 +710,17 @@ main {
     font-weight: 700;
 }
 
+.play-badge-link {
+    display: inline-flex;
+    width: fit-content;
+    margin-top: 2px;
+}
+
+.play-badge {
+    width: 220px;
+    height: auto;
+}
+
 .research-list {
     display: grid;
     gap: 14px;
@@ -762,6 +785,10 @@ main {
     .site-nav {
         width: 100%;
         justify-content: flex-start;
+    }
+
+    .header-cta {
+        min-height: 38px;
     }
 
     .hero-title,
